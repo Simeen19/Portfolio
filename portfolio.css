@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: black;
+  color: white;
+}
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient( black 75%, #A279F4 100%);
+}
+.container{
+  padding: 10px 10%;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo{
+  width: 200px;
+  height: 100px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #A279F4;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.header-text{
+  margin-top: 12%;
+  font-size: 30px;
+}
+.header-text h1{
+  font-size: 55px;
+}
+.header-text h1 span.sk{
+  font-size: 40px;
+  color: #A279F4;
+}
+.header-text p{
+  font-size: 25px;
+  margin-top: 10px;
+}
+.media-icons a{
+  color: #A279F4;
+  font-size: 25px;
+  margin: 0 6px;
+}
+.media-icons a:hover{
+  cursor: pointer;
+  color: white;
+}
+.button{
+  margin: 14px 0;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #A279F4;
+  color: black;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+.button:hover{
+  border-color: #A279F4;
+  background-color: black;
+  color: white;
+}
+
+/* ABOUT */
+#about{
+  padding: 300px 0;
+  background-image: linear-gradient(to top, black 75%, #A279F4 100%);
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{
+  flex-basis: 35%;
+}
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-2{
+  flex-basis: 60%;
+}
+.sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after{
+  content: '';
+  height: 3px;
+  background-color: #A279F4;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after{
+  width: 50%;
+}
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span{
+  color: #A279F4;
+  font-size: 20px;
+}
+.tab-contents{
+  display: none;
+
+}
+.tab-contents.active-tab{
+  display: block;
+}
+
+
+
+
+/* My Services CSS */
+.services{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( black 75%, #A279F4 100%);
+}
+.title span{
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+
+.services .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services .boxes .box{
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover{
+  background: #694da1;
+  color: rgb(252, 243, 243);
+}
+.services .boxes .box .icon{
+  height: 50px;
+  width: 50px;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #f4efef;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+/* .boxes .box:hover .icon{
+  background-color: #000;
+  color: #A279F4;
+} */
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #694da1;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #000;
+}
+
+
+
+
+
+/* contact
+.contact{
+  background-image: linear-gradient(to top, black 75%, #A279F4 100%);
+}
+.contact-left{
+  flex-basis: 35%;
+}
+.contact-right{
+  flex-basis: 60%;
+}
+.contact-left p{
+  margin-top: 30px;
+}
+.contact-left p i{
+  color: #c9c1db;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social-icons{
+  margin-top: 30px;
+}
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 15px;
+  color: gray;
+  transition: transform 0.5s;
+}
+.social-icons a:hover{
+  color: #A279F4;
+  transform: translateY(-5px);
+} */
+
+
+
+
+
+
+/* Footer CSS */
+footer{
+  background: #A279F4;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color: #000;
+}
+footer .text span a{
+  font-weight: 500;
+  color: #000;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+/* Scroll TO Top Button CSS
+.scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #000;
+  background: #A279F4;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+} */
+

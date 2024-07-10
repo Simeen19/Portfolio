@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simeen's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="logo.png" class="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="media-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/sialenx__r/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </nav>
+    <div class="header-text">
+      <p>Hello,</p>
+      <h1>I'm Simeen </span> <br><span class="sk">Front End Developer</span> <br></h1>
+      <p>B.Tech CSE (AI & ML) Student</p>
+    </div>
+    <button class="button">Contact me</button>
+  </div>
+</div>
+<!-- ABOUT -->
+<div id="about">
+    <div class="container">
+       <div class="row">
+         <div class="about-col-1">
+           <img src="pfp1.jpeg">
+         </div>
+         <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am Simeen Ali, an AIML undergrad and the Head of the Department for Podcast at e-DAM. With a passion for programming and web development, I have gained hands-on experience through various roles, including web development at Bharat Intern and event management at E-Cell IARE. My academic background in Computer Science with a focus on Artificial Intelligence and Machine Learning from the Institute of Aeronautical Engineering equips me with a solid foundation to excel in the tech industry. I am also proficient in event management, networking, and HTML!</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+            <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+            <p class="tab-links" onclick="opentab('education')"> Education </p>
+          </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li><span>Front End Developer</span><br>Designing Website frontend</li>
+                <li><span>Graphic Designer</span><br>Great at Canva and adobe illustrator</li>
+                <li><span>AI/ML enthusiast</span><br>Curious about AI and Ml functionality </li>
+              
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Head of Department for Podcast at e-DAM</span><br>Managing making podcast, creating social media content and recording video.</li>
+                <li><span>Graphic Designer at e-DAM</span><br>Designing various Social Media posts</li>
+                <li><span>Event manager at E-Cell IARE</span><br>Help in Event management</li>
+              
+              </ul>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li><span>B.tech in CSE [AI and ML] at Institute of Aeronautical Engineering</span><br>2023 - 2027</li>
+                <li><span>Secondary Education at Aakash Institute </span><br> 2021 - 2023</li>
+                <li><span>Primary Education at St. Ann's High School [ICSE]  </span><br>2011-2021 </li>
+              
+              </ul>
+            </div>
+         </div>
+       </div>
+    </div>
+</div>
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+
+    <!-- My Services Section Start -->
+    <section class="services" id="services">
+      <div class="content">
+        <div class="title"><span>My Services</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Web Devlopment</div>
+            <p>I am good in making website and i am really creative and has 
+              a vaste knowledge of web development
+            </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="topic">Python developer </div>
+            <p>I have a vaste knowledge of python and has also worked with 
+              code clause as the role of a python developer .
+            </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="topic">Project management</div>
+            <p> I have a vaste knowledge for project management 
+              and have also managed my team in  a hackethone competion</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fab fa-android"></i>
+            </div>
+            <div class="topic">Data structure</div>
+            <p>
+              I also have a good knowledge of data structure and algorithom .
+            </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-camera-retro"></i>
+            </div>
+            <div class="topic">Machine learning</div>
+            <p>I have a great knowledge of mechine learning .
+            </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-tablet-alt"></i>
+            </div>
+            <div class="topic">DBMS</div>
+            <p>I have knowledge of mongo db as database .
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------- Contact ---------->
+    <!-- <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fab fa-solid fa-envelope"></i>Simeen1909@gmail.com</p>
+            <p><i class="fab fa-solid fa-phone"></i>9032307704</p>
+            <div class="social-icons">
+              <a href =""><i class="fab fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="social-icons">
+              <a href =""><i class="fab fa-brands fa-github"></i></a>
+            </div>
+            <div class="social-icons">
+              <a href =""><i class="fab fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span>Created By Simeen Ali &#169; 2024 All Rights Reserved</span>
+      </div>
+    </footer>
+
+</body>
+</html>
